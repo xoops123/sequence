@@ -1,0 +1,83 @@
+/******************************************************************************/
+/* colors set */
+/******************************************************************************/
+
+/*** If you want to change the default(TwitterBootstrap) color, please remove this line.
+body {
+  color: #333333;
+	background-color:#ffffff;
+}
+a {
+  color: #0088cc;
+}
+a:hover {
+  color: #005580;
+}
+If you want to change the default(TwitterBootstrap) color, please remove this line. ***/
+
+
+#level_0 {
+	-moz-box-shadow: 0px -20px 10px rgba(0,0,0,0.4); /* Firefox—p */
+	-webkit-box-shadow: 0px -20px 10px rgba(0,0,0,0.4); /* Safari,Chrome—p */
+	box-shadow: 0px -20px 10px rgba(0,0,0,0.4); /* CSS3 */
+}
+
+/** section level_1 .include left-column **/
+#level_1 {
+	background:#e6eae3;
+}
+
+/** article .xoops contents **/
+#main-content .home {
+	background:#e6eae3;
+}
+
+/** section level_2 .include center-left-column  **/
+#level_2 {
+	background:#d4dcd6;
+}
+
+/** section level_3 .include center-right-column  **/
+#level_3 {
+	background:#d4dcda;
+}
+
+/** section level_4 .include right-column **/
+#level_4 {
+	background:#b3ada0;
+}
+
+
+/** main-contents .include left-column and module-contents **/
+#wrap {
+}
+
+/** footer **/
+footer, #footer {
+  background-color: #2c2c2c;
+  background-image: -moz-linear-gradient(top, #333333, #222222);
+  background-image: -ms-linear-gradient(top, #333333, #222222);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#333333), to(#222222));
+  background-image: -webkit-linear-gradient(top, #333333, #222222);
+  background-image: -o-linear-gradient(top, #333333, #222222);
+  background-image: linear-gradient(top, #333333, #222222);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#222222', GradientType=0);
+}
+#footer a ,
+footer a {
+	text-decoration:none;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+#footer a:hover ,
+footer a:hover {
+  color: #ffffff;
+}
+
+/* for xugj_date */
+.new1 {
+	color:red;
+}
+.new2 {
+	color:orange;
+}
