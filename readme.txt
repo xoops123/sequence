@@ -1,275 +1,279 @@
-【テーマ名　】 Sequence
-【バージョン】 0.1
-【作　成　者】 marine / mistgreen
-【動作　環境】 XOOPS Cube Legacy 2.1x (HD1.04)、2.2
-【ライセンス】 MIT
-【公 開 日　】 2012-9-6
+�y�e�[�}���@�z Sequence
+�y�o�[�W�����z 0.11
+�y��@���@�ҁz marine / mistgreen
+�y����@���z XOOPS Cube Legacy 2.1x (HD1.04)�A2.2
+�y���C�Z���X�z MIT
+�y�� �J ���@�z 2012-9-10
 
 ======================================================
-説明（概要）
+�����i�T�v�j
 ======================================================
 
-　HTML5+TwitterBootstrap採用のXCL2.1x(HD1.04)・XCL2.2用テーマです。PCでもiPhone 等のスマートフォンでも使えます。
-　閲覧環境に応じて柔軟にページレイアウトを切り替えるレスポンシブ・ウェブデザイン（Responsive Web Design ）、横幅940pxで１２分割のグリッドシステムを採用しているので、自由な画面レイアウトが可能となっています。TwitterBootstrapのページにてcssをカスタマイズしてそれを導入することも可能です。Xoops Cube Legacy 2.2 で動作確認しました。
+�@HTML5+TwitterBootstrap�̗p��XCL2.1x(HD1.04)�EXCL2.2�p�e�[�}�ł��BPC�ł�iPhone ���̃X�}�[�g�t�H���ł��g���܂��B
+�@�{�����ɉ����ď_��Ƀy�[�W���C�A�E�g��؂�ւ��郌�X�|���V�u�E�E�F�u�f�U�C���iResponsive Web Design �j�A����940px�łP�Q�����̃O���b�h�V�X�e�����̗p���Ă���̂ŁA���R�ȉ�ʃ��C�A�E�g���\�ƂȂ��Ă��܂��BTwitterBootstrap�̃y�[�W�ɂ�css���J�X�^�}�C�Y���Ă���𓱓����邱�Ƃ��\�ł��BXoops Cube Legacy 2.2 �œ���m�F���܂����B
 
-　トップページについては、Appleライクな画像スライダーを装備しました。
-　（下記サイトの素晴らしいjQueryプラグインを利用させていただきました。thx
-　　　　http://www.sequencejs.com/）
+�@�g�b�v�y�[�W�ɂ��ẮAApple���C�N�ȉ摜�X���C�_�[�𑕔����܂����B
+�@�i���L�T�C�g�̑f���炵��jQuery�v���O�C���𗘗p�����Ă��������܂����Bthx
+�@�@�@�@http://www.sequencejs.com/�j
 
-★重要★
-　このテーマではブロック幅をコントロールするための機能拡張のため、専用のプラグインを利用する設定としておりますので、解凍してできあがったフォルダ下にある xoops_trust_path/libs/smartyplugins フォルダの modifier.xoops_blocktitleclass.php と modifier.xoops_blocktitleclassdel.php をサイトのプラグインディレクトリにコピーしてください。（必須です。）
+���d�v��
+�@���̃e�[�}�ł̓u���b�N�����R���g���[�����邽�߂̋@�\�g���̂��߁A��p�̃v���O�C���𗘗p����ݒ�Ƃ��Ă���܂��̂ŁA�𓀂��Ăł����������t�H���_���ɂ��� xoops_trust_path/libs/smartyplugins �t�H���_�� modifier.xoops_blocktitleclass.php �� modifier.xoops_blocktitleclassdel.php ���T�C�g�̃v���O�C���f�B���N�g���ɃR�s�[���Ă��������B�i�K�{�ł��B�j
 
-　構造が通常のテーマとは全く異なっておりますので、ご利用の際は構造を理解のうえ、ブロック配置を行ってください。
+�@�\�����ʏ�̃e�[�}�Ƃ͑S���قȂ��Ă���܂��̂ŁA�����p�̍ۂ͍\���𗝉��̂����A�u���b�N�z�u���s���Ă��������B
 
-　ヘッダーには、xugj_assign プラグインを利用して、インストールされたモジュールに対応するメニューバーを自動表示するようにしています。
-　また、フッターにユーザーメニュー項目も自動表示するので、xoopsの互換モジュールである「メインメニュー」「ユーザーメニュー」を利用しない運用が可能となっています。
+�@�w�b�_�[�ɂ́Axugj_assign �v���O�C���𗘗p���āA�C���X�g�[�����ꂽ���W���[���ɑΉ����郁�j���[�o�[�������\������悤�ɂ��Ă��܂��B
+�@�܂��A�t�b�^�[�Ƀ��[�U�[���j���[���ڂ������\������̂ŁAxoops�̌݊����W���[���ł���u���C�����j���[�v�u���[�U�[���j���[�v�𗘗p���Ȃ��^�p���\�ƂȂ��Ă��܂��B
 
-　このテーマについては MIT ライセンスとさせていただきます。（jQueryのプラグイン sequence については MIT/GPLデュアルライセンス。TwitterBootstrapについては、Apache2ライセンス）
+�@���̃e�[�}�ɂ��Ă� MIT ���C�Z���X�Ƃ����Ă��������܂��B�ijQuery�̃v���O�C�� sequence �ɂ��Ă� MIT/GPL�f���A�����C�Z���X�BTwitterBootstrap�ɂ��ẮAApache2���C�Z���X�j
 
- また、このテーマには、XOOPSに適切なメタ情報とOGPを付加するカスタマイズを追加していますので、同封のファイル群を指定したディレクトリにコピーしてご利用ください。（下記インストール参照）なお、カスタマイズの詳細については下記ページをご覧ください。
-　　http://xoops123.com/modules/d3downloads/index.php?page=singlefile&cid=9&lid=61
-
-
-======================================================
-説明（詳細）
-======================================================
-
-　とりあえず、utf8とeucのlanguageファイルは用意しましたが、HTML5ということで utf8ベースで動作すると思います。eucでの動作は確認していません。
-
-　メニューは、Xoops Users Group Japan(XUGJ) で GIJOEさんが提唱された xugj_assign.php を利用したメニューを採用しています。
-　通常のメインメニューに表示されるのと同じ項目が自動で表示されるので、メニューの項目を編集する必要もありません。
-　　http://www.xugj.org/modules/d3forum/index.php?topic_id=125
-
-　なお、同封しているものは、オリジナルの xugj_assign.php から少し変更しているので、xugj_assign_theme.php という名称に変更しています。
-
-　jQuery.js + jquery.jgrowlプラグインを利用して、画面遷移せずにリダイレクト表示できるので、スピーディーでセンスの良い表示が可能となっています。　なお、本テーマには、domifaraさん作成のphpファイルによるインクルード方法を用いております。
-　domifaraさん、ありがとうございます。（javascriptオフ時には、リダイレクトの文字などがボックス表示されます。）
-
-　jQueryについては、domifaraさんによるXCL2.2対応措置がとられており、jQueryの二重読み込み防止や他のjavascriptとのバッティングを可能な限り避ける仕組みが用いられております。　(xugj_already_js.php をXCL2.1対応版に差し替えております。）
-
-
-【画面表示について】
-
-　このテーマは、TwitterBootstrapのcssを採用し、横幅940pxで１２分割のグリッドシステムを採用しているので、自由な配置が可能です。
-　また、メディア・クエリ（Media Queries）を利用して、表示するデバイス（ブラウザ）の画面幅によりスタイル（CSS）の切替を行います。基本的な最大表示幅は940pxでブラウザの幅を縮めるとそれに応じて横幅が狭まったり、ボックスが移動したりします。
-
-　従来のテーマでは、ブロックの幅などについて、cssに記載された横幅でしか表示できませんでしたが、このテーマでは、管理画面のブロック管理にてブロックタイトルに指定したキーワードを追記するだけで、あらかじめ設定した１２種類の横幅を設定することが可能となっています。
-（テーマの名称は tw_coffee_time ですが、表示のコントロール方法は テーマ coffee_time とは全く異なっていますので留意願います。また、tw_940ではフッター部分にあった右ブロック表示部分が変更となっていますので、合わせてご注意ください。）
-
-　★設定方法：
-　　ブロックのタイトル欄に　[[span1 から [[span12 までの１２種類の文字列を追記してください。
-　　なお、追記しない場合には初期値が利用されるので、問題はありません。また、従来から利用しているタイトルの none 技も継承しています。
-
-１、トップページ（ホーム）の場合
-　上から５つの領域に分けて表示できるようになっており、それぞれ次のように設定しています。
-
-　■ header ■■■■■■■■■■■■■■■■■■■■
-　■ 　h1 sitename + slogan
-　■ 　中央中央ブロック表示（h3でタイトル表示） 初期値：span4
-
-　■ section id:level_01 ■■■■■■■■■■■■■■
-　■ 　左ブロック表示（h3でタイトル表示）　初期値：span4
-
-　■■■■■■■■■■■■■■■■■■■■■■■■■■
-　■ xoopsコンテンツ（指定がある場合）　初期値：span12（横幅一杯に表示）
-
-　■ section id:level_02 ■■■■■■■■■■■■■■
-　■ 　中央左ブロック表示（h3でタイトル表示）　初期値：span2
-
-　■ section id:level_03 ■■■■■■■■■■■■■■
-　■ 　中央右ブロック表示（h3でタイトル表示）　初期値：span2
-
-　■ section id:level_04 ■■■■■■■■■■■■■■
-　■ 　右ブロック表示（h3でタイトル表示）　初期値：span2
-
-　■ footer ■■■■■■■■■■■■■■■■■■■■
-　■ 　フッターメニュー
-
-
-２、モジュール・ページの場合
-
-　■ header ■■■■■■■■■■■■■■■■■■■■
-　　h1 sitename + slogan + 中央中央ブロックのweghtが一番小さいブロックのタイトル
-　　中央中央ブロック表示（weghtが一番小さいもの以外は、h3でタイトル表示） 初期値：span4
-
-　（１）左ブロックがある場合
-　■　wrap　■■■■■■■■■■■■■■■■■■■■■■■
-　■　左ブロック　■　■■■　モジュールコンテンツ　■■■
-　■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-　（２）左ブロックがない場合
-　■　wrap　■■■■■■■■■■■■■■■■■■■■■■■
-　■　モジュールコンテンツ　　　　　　　　　　　　　　　■
-　■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-
-　■ section id:level_02 ■■■■■■■■■■■■■■
-　■ 　中央左ブロック表示（h3でタイトル表示）　初期値：span2
-
-　■ section id:level_03 ■■■■■■■■■■■■■■
-　■ 　中央右ブロック表示（h3でタイトル表示）　初期値：span2
-
-　■ section id:level_04 ■■■■■■■■■■■■■■
-　■ 　右ブロック表示（h3でタイトル表示）　初期値：span2
-
-　■ footer ■■■■■■■■■■■■■■■■■■■■
-　■ 　フッターメニュー
-
-
-　２（１）の場合、基本２カラム表示であり左ブロックの初期値は span3 となっていますが、weightが一番小さなブロックに [[span4 などの指定がある場合、左ブロック全体を包むdivがそれに応じて広がり、モジュール側のdivが自動調整されるようになっています。つまり、表現力が大幅に向上しているということですね。
-
-　なお、フッターのメニューにはログインなどのリンクを装備しており、jQueryのプラグインを用いて、ポップアップでログインブロックが表示されるようにしています。
+ �܂��A���̃e�[�}�ɂ́AXOOPS�ɓK�؂ȃ��^����OGP��t������J�X�^�}�C�Y��ǉ����Ă��܂��̂ŁA�����̃t�@�C���Q���w�肵���f�B���N�g���ɃR�s�[���Ă����p���������B�i���L�C���X�g�[���Q�Ɓj�Ȃ��A�J�X�^�}�C�Y�̏ڍׂɂ��Ă͉��L�y�[�W���������������B
+�@�@http://xoops123.com/modules/d3downloads/index.php?page=singlefile&cid=9&lid=61
 
 
 ======================================================
-インストール
+�����i�ڍׁj
 ======================================================
 
-　このテーマではブロック幅をコントロールするための機能拡張を利用するために専用のプラグインを利用する設定としております。
-　プラグインがない場合はエラーとなりますので、必ず導入してください。
+�@�Ƃ肠�����Autf8��euc��language�t�@�C���͗p�ӂ��܂������AHTML5�Ƃ������Ƃ� utf8�x�[�X�œ��삷��Ǝv���܂��Beuc�ł̓���͊m�F���Ă��܂���B
 
-　プラグインは、解凍してできあがったフォルダ下にある xoops_trust_path/libs/smartyplugins フォルダの modifier.xoops_blocktitleclass.php と modifier.xoops_blocktitleclassdel.php の２種類です。これをサイトのプラグインディレクトリにコピーしてください。（必須です。）
-　また、テーマ下テンプレートで function.xugj_block.php と modifier.xugj_date.php を利用しているので、これも同様にコピーして下さい。
+�@���j���[�́AXoops Users Group Japan(XUGJ) �� GIJOE���񂪒񏥂��ꂽ xugj_assign.php �𗘗p�������j���[���̗p���Ă��܂��B
+�@�ʏ�̃��C�����j���[�ɕ\�������̂Ɠ������ڂ������ŕ\�������̂ŁA���j���[�̍��ڂ�ҏW����K�v������܂���B
+�@�@http://www.xugj.org/modules/d3forum/index.php?topic_id=125
 
-　また、XOOPSに適切なメタ情報とOGPを付加するカスタマイズを追加しておりますので、html/common/ogp/ フォルダをサイトの common ディレクトリに追加してください。（必須。ただし、既に存在している場合は、上書きに要注意。）
+�@�Ȃ��A�������Ă�����̂́A�I���W�i���� xugj_assign.php ���班���ύX���Ă���̂ŁAxugj_assign_theme.php �Ƃ������̂ɕύX���Ă��܂��B
 
-　インストールは通常テーマと同じですが、主要モジュールのテンプレートを本テーマに最適化させるため、テーマ下テンプレートとして同封していますので、できればテーマ下テンプレートが有効となるように設定していただいた方が良いでしょう。(その際、同封のプラグインも利用するようにコピー作業等を行ってください。）
+�@jQuery.js + jquery.jgrowl�v���O�C���𗘗p���āA��ʑJ�ڂ����Ƀ��_�C���N�g�\���ł���̂ŁA�X�s�[�f�B�[�ŃZ���X�̗ǂ��\�����\�ƂȂ��Ă��܂��B�@�Ȃ��A�{�e�[�}�ɂ́Adomifara����쐬��php�t�@�C���ɂ��C���N���[�h���@��p���Ă���܂��B
+�@domifara����A���肪�Ƃ��������܂��B�ijavascript�I�t���ɂ́A���_�C���N�g�̕����Ȃǂ��{�b�N�X�\������܂��B�j
 
-　簡単な方法としては、解凍してできあがったフォルダ下にある html フォルダを開いて、そこにある common、preload、themes の各フォルダをFTPにてサイトのルート・ディレクトリへコピーすると良いでしょう。（コピー先に既に存在する場合は、適宜判断してください。）
-
-　次に、以下の手順でテーマ下テンプレート利用のための作業を行ってください。
-
-　完了したら通常のテーマと同様、管理画面の「互換モジュール」「テーマの管理」でこのテーマを使用する設定としてください。
+�@jQuery�ɂ��ẮAdomifara����ɂ��XCL2.2�Ή��[�u���Ƃ��Ă���AjQuery�̓�d�ǂݍ��ݖh�~�⑼��javascript�Ƃ̃o�b�e�B���O���\�Ȍ��������d�g�݂��p�����Ă���܂��B�@(xugj_already_js.php ��XCL2.1�Ή��łɍ����ւ��Ă���܂��B�j
 
 
-【テーマ下テンプレートが利用可能な場合】
+�y��ʕ\���ɂ��āz
 
-　ご利用になっている xoops がテーマ下テンプレート利用可能な場合は、本テーマディレクトリ下にある 「templates」ディレクトリに収納されたカスタマイズ済みのテンプレートを利用するようになります。
-　XOOPS X（Pack2011～）の場合、既にpreloadに「HypXoopsTplHook.class.php」が入っていますので、テーマ下テンプレートが利用可能となっています。（最新のHyperCommonFoncを利用している場合、このプリロードも不要です。）
+�@���̃e�[�}�́ATwitterBootstrap��css���̗p���A����940px�łP�Q�����̃O���b�h�V�X�e�����̗p���Ă���̂ŁA���R�Ȕz�u���\�ł��B
+�@�܂��A���f�B�A�E�N�G���iMedia Queries�j�𗘗p���āA�\������f�o�C�X�i�u���E�U�j�̉�ʕ��ɂ��X�^�C���iCSS�j�̐ؑւ��s���܂��B��{�I�ȍő�\������940px�Ńu���E�U�̕����k�߂�Ƃ���ɉ����ĉ��������܂�����A�{�b�N�X���ړ������肵�܂��B
 
-　テーマ下テンプレートを利用する場合、xugj_date や xugj_block を利用します。（前述のとおり、modifier.xugj_date.php と function.xugj_block.php が必要）
+�@�]���̃e�[�}�ł́A�u���b�N�̕��Ȃǂɂ��āAcss�ɋL�ڂ��ꂽ�����ł����\���ł��܂���ł������A���̃e�[�}�ł́A�Ǘ���ʂ̃u���b�N�Ǘ��ɂău���b�N�^�C�g���Ɏw�肵���L�[���[�h��ǋL���邾���ŁA���炩���ߐݒ肵���P�Q��ނ̉�����ݒ肷�邱�Ƃ��\�ƂȂ��Ă��܂��B
+�i�e�[�}�̖��̂� tw_coffee_time �ł����A�\���̃R���g���[�����@�� �e�[�} coffee_time �Ƃ͑S���قȂ��Ă��܂��̂ŗ��ӊ肢�܂��B�܂��Atw_940�ł̓t�b�^�[�����ɂ������E�u���b�N�\���������ύX�ƂȂ��Ă��܂��̂ŁA���킹�Ă����ӂ��������B�j
 
-　「plugin」ディレクトリは、XCL2.1x と XCL2.2 では場所が違うのでご注意ください。
-　　　XCL2.1xの場合　/XOOPS_ROOT_PATH/class/smarty/plugins/ 
-　　　XCL2.2の場合　 /XOOPS_TRUST_PATH/libs/smarty/plugins/　または
-　　　　　　　　　　 /XOOPS_TRUST_PATH/libs/smartyplugins/ （preload「HdXoopsTplHook.class.php」または「HypXoopsTplHook.class.php」を使っている場合、このディレクトリが優先となります。最新のHyperCommonFoncを利用している場合は、同モジュールにて読み込み順の設定等が可能となっています。）
+�@���ݒ���@�F
+�@�@�u���b�N�̃^�C�g�����Ɂ@[[span1 ���� [[span12 �܂ł̂P�Q��ނ̕������ǋL���Ă��������B
+�@�@�Ȃ��A�ǋL���Ȃ��ꍇ�ɂ͏����l�����p�����̂ŁA���͂���܂���B�܂��A�]�����痘�p���Ă���^�C�g���� none �Z���p�����Ă��܂��B
 
+�P�A�g�b�v�y�[�W�i�z�[���j�̏ꍇ
+�@�ォ��T�̗̈�ɕ����ĕ\���ł���悤�ɂȂ��Ă���A���ꂼ�ꎟ�̂悤�ɐݒ肵�Ă��܂��B
 
-【テーマ下テンプレートが利用できない場合】
+�@�� header ����������������������������������������
+�@�� �@h1 sitename + slogan
+�@�� �@���������u���b�N�\���ih3�Ń^�C�g���\���j �����l�Fspan4
 
-　最新のHyperCommonFoncを利用している場合、この作業は不要です。
+�@�� section id:level_01 ����������������������������
+�@�� �@���u���b�N�\���ih3�Ń^�C�g���\���j�@�����l�Fspan4
 
-　それ以外の場合・・・もし、テーマ下テンプレートを利用できない環境の場合、本テーマ下の「up/preload」フォルダにある HdXoopsTplHook.class.php をFTPにてサイトの「preload」ディレクトリに、本テーマ下の「up/plugin」フォルダにある resource.db.php をサイトの「plugin」ディレクトリにそれぞれコピーしてください。
-　なお、XOOPS X（Pack2011～）の場合、既にpreloadに「HypXoopsTplHook.class.php」が入っていますので、この作業は不要です。（「HypXoopsTplHook.class.php」は、「HdXoopsTplHook.class.php」の機能を最新版にしたものです。）
+�@����������������������������������������������������
+�@�� xoops�R���e���c�i�w�肪����ꍇ�j�@�����l�Fspan12�i������t�ɕ\���j
 
-　詳細はこちらを参照して下さい。
-　　http://xoops.peak.ne.jp/md/news/index.php?page=article&storyid=450
+�@�� section id:level_02 ����������������������������
+�@�� �@�������u���b�N�\���ih3�Ń^�C�g���\���j�@�����l�Fspan2
 
+�@�� section id:level_03 ����������������������������
+�@�� �@�����E�u���b�N�\���ih3�Ń^�C�g���\���j�@�����l�Fspan2
 
-【テーマ下テンプレート利用可能だが、本テーマのテーマ下テンプレートを使いたくない場合】
+�@�� section id:level_04 ����������������������������
+�@�� �@�E�u���b�N�\���ih3�Ń^�C�g���\���j�@�����l�Fspan2
 
-　逆に、本テーマ下のテンプレートを使いたくない場合は、テーマ下にある「templates」ディレクトリを削除してください。ただし、webphotoモジュール使用時のギャラリー表示などはできなくなります。
-
-■理由：テーマ下テンプレート利用可能なxoops（HDやXOOPS X（Pack2011～）など）では、次の優先順位でテンプレートを読み込むため
-　１　テーマ下テンプレート
-　２　現在ActiveなDBテンプレート
-　３　Default(DB)テンプレート
-
-テンプレートを変更しようとして、Altsysで「現在ActiveなDBテンプレート」をいくら修正しても、テーマ下テンプレートがある場合はそちらが優先されてしまうということに注意が必要です。
-
-
-【prettyPhotoを利用する場合】
-　このテーマでは、jQuery のプラグインである prettyPhoto を利用するとお洒落なポップアップ画像表示ができるように設定しています。
-
-　ご利用になるには、同封している jQuery_Pretty.class.php をサイトのプリロードディレクトリにアップロードしてください。
-　xcl2.2の場合は、xoopsのcommonディレクトリに jQuery と一緒に prettyPhoto が入っていると思いますので、それで作動すると思います。もし、commonディレクトリに prettyPhoto がない場合は、このテーマに同封しているものをアップロードしてください。
-
-　利用しているプリロードはdomifaraさん作のもので、最新のものは次のurlとなります。（domifaraさん、感謝します。）
-　　　http://xodomifara.lolipop.jp/doxo/modules/d3downloads/index.php?page=singlefile&cid=3&lid=67
+�@�� footer ����������������������������������������
+�@�� �@�t�b�^�[���j���[
 
 
-【webphotoの利用について】
-　webphotoでprettyPhotoを利用する場合、webphotoの一般設定画面にて、次の設定を行ってください。
-　　PopBoxを使用する　「いいえ」
-　　LightBoxを使用する「いいえ」
+�Q�A���W���[���E�y�[�W�̏ꍇ
 
-　一般設定画面にて設定する各種画像の大きさはデフォルトを想定しています。
-　一覧表示の表示タイプは、「テーブル表示」「説明文付きリスト表示」のいずれでも prettyPhoto が動作するように設定していますが、テーブル表示を選択した場合、テーブルではなく div（ボックス）を利用した表示としており、画面幅に応じてボックスが並ぶように設定していますので、テーブル表示時のカラム数欄の数値は意味をなしません。
+�@�� header ����������������������������������������
+�@�@h1 sitename + slogan + ���������u���b�N��weght����ԏ������u���b�N�̃^�C�g��
+�@�@���������u���b�N�\���iweght����ԏ��������̈ȊO�́Ah3�Ń^�C�g���\���j �����l�Fspan4
 
-　なお、このテーマでは、webphotoモジュールを「webphoto」ディレクトリ名にて利用する場合を想定して、テンプレート等の設定を行っています。もし、違うディレクトリ名でご利用の場合は、別途カスタマイズが必要となりますので、ご了承ください。
+�@�i�P�j���u���b�N������ꍇ
+�@���@wrap�@����������������������������������������������
+�@���@���u���b�N�@���@�������@���W���[���R���e���c�@������
+�@��������������������������������������������������������
+�@�i�Q�j���u���b�N���Ȃ��ꍇ
+�@���@wrap�@����������������������������������������������
+�@���@���W���[���R���e���c�@�@�@�@�@�@�@�@�@�@�@�@�@�@�@��
+�@��������������������������������������������������������
+
+�@�� section id:level_02 ����������������������������
+�@�� �@�������u���b�N�\���ih3�Ń^�C�g���\���j�@�����l�Fspan2
+
+�@�� section id:level_03 ����������������������������
+�@�� �@�����E�u���b�N�\���ih3�Ń^�C�g���\���j�@�����l�Fspan2
+
+�@�� section id:level_04 ����������������������������
+�@�� �@�E�u���b�N�\���ih3�Ń^�C�g���\���j�@�����l�Fspan2
+
+�@�� footer ����������������������������������������
+�@�� �@�t�b�^�[���j���[
+
+
+�@�Q�i�P�j�̏ꍇ�A��{�Q�J�����\���ł��荶�u���b�N�̏����l�� span3 �ƂȂ��Ă��܂����Aweight����ԏ����ȃu���b�N�� [[span4 �Ȃǂ̎w�肪����ꍇ�A���u���b�N�S�̂���div������ɉ����čL����A���W���[������div���������������悤�ɂȂ��Ă��܂��B�܂�A�\���͂��啝�Ɍ��サ�Ă���Ƃ������Ƃł��ˁB
+
+�@�Ȃ��A�t�b�^�[�̃��j���[�ɂ̓��O�C���Ȃǂ̃����N�𑕔����Ă���AjQuery�̃v���O�C����p���āA�|�b�v�A�b�v�Ń��O�C���u���b�N���\�������悤�ɂ��Ă��܂��B
 
 
 ======================================================
-カスタマイズ
+�C���X�g�[��
 ======================================================
 
-【メニュー表示項目の変更】
+�@���̃e�[�}�ł̓u���b�N�����R���g���[�����邽�߂̋@�\�g���𗘗p���邽�߂ɐ�p�̃v���O�C���𗘗p����ݒ�Ƃ��Ă���܂��B
+�@�v���O�C�����Ȃ��ꍇ�̓G���[�ƂȂ�܂��̂ŁA�K���������Ă��������B
 
-　このテーマでは、xugj_assign_phpを用いたメニュー表示を行いますが、インストールして初回表示した時に、メインメニュー表示する設定となっているメニュー項目を自動で引用してきます。（表示用のキャッシュファイルを自動作成して利用）
+�@�v���O�C���́A�𓀂��Ăł����������t�H���_���ɂ��� xoops_trust_path/libs/smartyplugins �t�H���_�� modifier.xoops_blocktitleclass.php �� modifier.xoops_blocktitleclassdel.php �̂Q��ނł��B������T�C�g�̃v���O�C���f�B���N�g���ɃR�s�[���Ă��������B�i�K�{�ł��B�j
+�@�܂��A�e�[�}���e���v���[�g�� function.xugj_block.php �� modifier.xugj_date.php �𗘗p���Ă���̂ŁA��������l�ɃR�s�[���ĉ������B
 
-　従って、モジュールの管理にてモジュールの表示名を変えたり、並び順を「０」として非表示指定した場合でも、テーマのメニュー表示は以前作成したキャッシュファイルを利用することから、変更した表示となりません。
+�@�܂��AXOOPS�ɓK�؂ȃ��^����OGP��t������J�X�^�}�C�Y��ǉ����Ă���܂��̂ŁAhtml/common/ogp/ �t�H���_���T�C�g�� common �f�B���N�g���ɒǉ����Ă��������B�i�K�{�B�������A���ɑ��݂��Ă���ꍇ�́A�㏑���ɗv���ӁB�j
 
-　そのような場合、FTPソフトを使って、cacheディレクトリ内の theme_trend_menus_****.php を削除してください。再度、サイトを表示した際に、新しくメニュー用のキャッシュファイルが自動生成されます。
+�@�C���X�g�[���͒ʏ�e�[�}�Ɠ����ł����A��v���W���[���̃e���v���[�g��{�e�[�}�ɍœK�������邽�߁A�e�[�}���e���v���[�g�Ƃ��ē������Ă��܂��̂ŁA�ł���΃e�[�}���e���v���[�g���L���ƂȂ�悤�ɐݒ肵�Ă��������������ǂ��ł��傤�B(���̍ہA�����̃v���O�C�������p����悤�ɃR�s�[��Ɠ����s���Ă��������B�j
 
-　なお、domifaraさん作成の「xugjメニューキャッシュリフレシュ　管理画面モジュール」を利用すると、FTPソフトを使わずにキャッシュファイルの削除ができるので、便利だと思います。（domifaraさん、ありがとうございます。）
-　　http://xodomifara.lolipop.jp/karidown/xoops_mod_xugjmcdel.zip
-　　　最新のXOOPS X に入っている X-update を用いると、管理画面から簡単にインストールできます。
+�@�ȒP�ȕ��@�Ƃ��ẮA�𓀂��Ăł����������t�H���_���ɂ��� html �t�H���_���J���āA�����ɂ��� common�Apreload�Athemes �̊e�t�H���_��FTP�ɂăT�C�g�̃��[�g�E�f�B���N�g���փR�s�[����Ɨǂ��ł��傤�B�i�R�s�[��Ɋ��ɑ��݂���ꍇ�́A�K�X���f���Ă��������B�j
 
+�@���ɁA�ȉ��̎菇�Ńe�[�}���e���v���[�g���p�̂��߂̍�Ƃ��s���Ă��������B
 
-【色合いの調整等】
-
-　本格的な調整は、TwitterBootstrapのcssを修正する必要があります。
-　TwitterBootstrapのcssについては、オリジナルをそのまま採用していますので、当該サイトにおけるカスタマイズや関連サイトで紹介されている設定変更方法などを参照してください。
-
-　なお、本テーマについては、sectionなどオリジナルな部分を追加しておりますので、それらについては同封の colors.css を修正することで、簡単に背景色などの変更を行うことが出来るように設定しております。是非ともお試し下さい。
+�@����������ʏ�̃e�[�}�Ɠ��l�A�Ǘ���ʂ́u�݊����W���[���v�u�e�[�}�̊Ǘ��v�ł��̃e�[�}���g�p����ݒ�Ƃ��Ă��������B
 
 
-【スライドショーについて】
-　スライドショーはトップページのみ表示するようになっています。
-　theme_sequence.html と sequencejs-theme.apple-style.css にて、表示文章や画像の設定を行っていますので、カスタマイズする場合は、それぞれのファイルを修正してください。
+�y�e�[�}���e���v���[�g�����p�\�ȏꍇ�z
 
-　もし、スライドショーを使いたくない場合は、theme_home.html の 4行目にある
-　	　<{include file="`$xoops_theme`/theme_sequence.html"}>
-という記述をコメントアウトするか削除してください。
+�@�����p�ɂȂ��Ă��� xoops ���e�[�}���e���v���[�g���p�\�ȏꍇ�́A�{�e�[�}�f�B���N�g�����ɂ��� �utemplates�v�f�B���N�g���Ɏ��[���ꂽ�J�X�^�}�C�Y�ς݂̃e���v���[�g�𗘗p����悤�ɂȂ�܂��B
+�@XOOPS X�iPack2011�`�j�̏ꍇ�A����preload�ɁuHypXoopsTplHook.class.php�v�������Ă��܂��̂ŁA�e�[�}���e���v���[�g�����p�\�ƂȂ��Ă��܂��B�i�ŐV��HyperCommonFonc�𗘗p���Ă���ꍇ�A���̃v�����[�h���s�v�ł��B�j
+
+�@�e�[�}���e���v���[�g�𗘗p����ꍇ�Axugj_date �� xugj_block �𗘗p���܂��B�i�O�q�̂Ƃ���Amodifier.xugj_date.php �� function.xugj_block.php ���K�v�j
+
+�@�uplugin�v�f�B���N�g���́AXCL2.1x �� XCL2.2 �ł͏ꏊ���Ⴄ�̂ł����ӂ��������B
+�@�@�@XCL2.1x�̏ꍇ�@/XOOPS_ROOT_PATH/class/smarty/plugins/ 
+�@�@�@XCL2.2�̏ꍇ�@ /XOOPS_TRUST_PATH/libs/smarty/plugins/�@�܂���
+�@�@�@�@�@�@�@�@�@�@ /XOOPS_TRUST_PATH/libs/smartyplugins/ �ipreload�uHdXoopsTplHook.class.php�v�܂��́uHypXoopsTplHook.class.php�v���g���Ă���ꍇ�A���̃f�B���N�g�����D��ƂȂ�܂��B�ŐV��HyperCommonFonc�𗘗p���Ă���ꍇ�́A�����W���[���ɂēǂݍ��ݏ��̐ݒ蓙���\�ƂȂ��Ă��܂��B�j
+
+
+�y�e�[�}���e���v���[�g�����p�ł��Ȃ��ꍇ�z
+
+�@�ŐV��HyperCommonFonc�𗘗p���Ă���ꍇ�A���̍�Ƃ͕s�v�ł��B
+
+�@����ȊO�̏ꍇ�E�E�E�����A�e�[�}���e���v���[�g�𗘗p�ł��Ȃ����̏ꍇ�A�{�e�[�}���́uup/preload�v�t�H���_�ɂ��� HdXoopsTplHook.class.php ��FTP�ɂăT�C�g�́upreload�v�f�B���N�g���ɁA�{�e�[�}���́uup/plugin�v�t�H���_�ɂ��� resource.db.php ���T�C�g�́uplugin�v�f�B���N�g���ɂ��ꂼ��R�s�[���Ă��������B
+�@�Ȃ��AXOOPS X�iPack2011�`�j�̏ꍇ�A����preload�ɁuHypXoopsTplHook.class.php�v�������Ă��܂��̂ŁA���̍�Ƃ͕s�v�ł��B�i�uHypXoopsTplHook.class.php�v�́A�uHdXoopsTplHook.class.php�v�̋@�\���ŐV�łɂ������̂ł��B�j
+
+�@�ڍׂ͂�������Q�Ƃ��ĉ������B
+�@�@http://xoops.peak.ne.jp/md/news/index.php?page=article&storyid=450
+
+
+�y�e�[�}���e���v���[�g���p�\�����A�{�e�[�}�̃e�[�}���e���v���[�g���g�������Ȃ��ꍇ�z
+
+�@�t�ɁA�{�e�[�}���̃e���v���[�g���g�������Ȃ��ꍇ�́A�e�[�}���ɂ���utemplates�v�f�B���N�g�����폜���Ă��������B�������Awebphoto���W���[���g�p���̃M�������[�\���Ȃǂ͂ł��Ȃ��Ȃ�܂��B
+
+�����R�F�e�[�}���e���v���[�g���p�\��xoops�iHD��XOOPS X�iPack2011�`�j�Ȃǁj�ł́A���̗D�揇�ʂŃe���v���[�g��ǂݍ��ނ���
+�@�P�@�e�[�}���e���v���[�g
+�@�Q�@����Active��DB�e���v���[�g
+�@�R�@Default(DB)�e���v���[�g
+
+�e���v���[�g��ύX���悤�Ƃ��āAAltsys�Łu����Active��DB�e���v���[�g�v��������C�����Ă��A�e�[�}���e���v���[�g������ꍇ�͂����炪�D�悳��Ă��܂��Ƃ������Ƃɒ��ӂ��K�v�ł��B
+
+
+�yprettyPhoto�𗘗p����ꍇ�z
+�@���̃e�[�}�ł́AjQuery �̃v���O�C���ł��� prettyPhoto �𗘗p����Ƃ������ȃ|�b�v�A�b�v�摜�\�����ł���悤�ɐݒ肵�Ă��܂��B
+
+�@�����p�ɂȂ�ɂ́A�������Ă��� jQuery_Pretty.class.php ���T�C�g�̃v�����[�h�f�B���N�g���ɃA�b�v���[�h���Ă��������B
+�@xcl2.2�̏ꍇ�́Axoops��common�f�B���N�g���� jQuery �ƈꏏ�� prettyPhoto �������Ă���Ǝv���܂��̂ŁA����ō쓮����Ǝv���܂��B�����Acommon�f�B���N�g���� prettyPhoto ���Ȃ��ꍇ�́A���̃e�[�}�ɓ������Ă�����̂��A�b�v���[�h���Ă��������B
+
+�@���p���Ă���v�����[�h��domifara�����̂��̂ŁA�ŐV�̂��͎̂���url�ƂȂ�܂��B�idomifara����A���ӂ��܂��B�j
+�@�@�@http://xodomifara.lolipop.jp/doxo/modules/d3downloads/index.php?page=singlefile&cid=3&lid=67
+
+
+�ywebphoto�̗��p�ɂ��āz
+�@webphoto��prettyPhoto�𗘗p����ꍇ�Awebphoto�̈�ʐݒ��ʂɂāA���̐ݒ���s���Ă��������B
+�@�@PopBox���g�p����@�u�������v
+�@�@LightBox���g�p����u�������v
+
+�@��ʐݒ��ʂɂĐݒ肷��e��摜�̑傫���̓f�t�H���g��z�肵�Ă��܂��B
+�@�ꗗ�\���̕\���^�C�v�́A�u�e�[�u���\���v�u�������t�����X�g�\���v�̂�����ł� prettyPhoto �����삷��悤�ɐݒ肵�Ă��܂����A�e�[�u���\����I�������ꍇ�A�e�[�u���ł͂Ȃ� div�i�{�b�N�X�j�𗘗p�����\���Ƃ��Ă���A��ʕ��ɉ����ă{�b�N�X�����Ԃ悤�ɐݒ肵�Ă��܂��̂ŁA�e�[�u���\�����̃J���������̐��l�͈Ӗ����Ȃ��܂���B
+
+�@�Ȃ��A���̃e�[�}�ł́Awebphoto���W���[�����uwebphoto�v�f�B���N�g�����ɂė��p����ꍇ��z�肵�āA�e���v���[�g���̐ݒ���s���Ă��܂��B�����A�Ⴄ�f�B���N�g�����ł����p�̏ꍇ�́A�ʓr�J�X�^�}�C�Y���K�v�ƂȂ�܂��̂ŁA���������������B
+
+
+======================================================
+�J�X�^�}�C�Y
+======================================================
+
+�y���j���[�\�����ڂ̕ύX�z
+
+�@���̃e�[�}�ł́Axugj_assign_php��p�������j���[�\�����s���܂����A�C���X�g�[�����ď���\���������ɁA���C�����j���[�\������ݒ�ƂȂ��Ă��郁�j���[���ڂ������ň��p���Ă��܂��B�i�\���p�̃L���b�V���t�@�C���������쐬���ė��p�j
+
+�@�]���āA���W���[���̊Ǘ��ɂă��W���[���̕\������ς�����A���я����u�O�v�Ƃ��Ĕ�\���w�肵���ꍇ�ł��A�e�[�}�̃��j���[�\���͈ȑO�쐬�����L���b�V���t�@�C���𗘗p���邱�Ƃ���A�ύX�����\���ƂȂ�܂���B
+
+�@���̂悤�ȏꍇ�AFTP�\�t�g���g���āAcache�f�B���N�g������ theme_trend_menus_****.php ���폜���Ă��������B�ēx�A�T�C�g��\�������ۂɁA�V�������j���[�p�̃L���b�V���t�@�C����������������܂��B
+
+�@�Ȃ��Adomifara����쐬�́uxugj���j���[�L���b�V�����t���V���@�Ǘ���ʃ��W���[���v�𗘗p����ƁAFTP�\�t�g���g�킸�ɃL���b�V���t�@�C���̍폜���ł���̂ŁA�֗����Ǝv���܂��B�idomifara����A���肪�Ƃ��������܂��B�j
+�@�@http://xodomifara.lolipop.jp/karidown/xoops_mod_xugjmcdel.zip
+�@�@�@�ŐV��XOOPS X �ɓ����Ă��� X-update ��p����ƁA�Ǘ���ʂ���ȒP�ɃC���X�g�[���ł��܂��B
+
+
+�y�F�����̒������z
+
+�@�{�i�I�Ȓ����́ATwitterBootstrap��css���C������K�v������܂��B
+�@TwitterBootstrap��css�ɂ��ẮA�I���W�i�������̂܂܍̗p���Ă��܂��̂ŁA���Y�T�C�g�ɂ�����J�X�^�}�C�Y��֘A�T�C�g�ŏЉ��Ă���ݒ�ύX���@�Ȃǂ��Q�Ƃ��Ă��������B
+
+�@�Ȃ��A�{�e�[�}�ɂ��ẮAsection�ȂǃI���W�i���ȕ�����ǉ����Ă���܂��̂ŁA�����ɂ��Ă͓����� colors.css ���C�����邱�ƂŁA�ȒP�ɔw�i�F�Ȃǂ̕ύX���s�����Ƃ��o����悤�ɐݒ肵�Ă���܂��B����Ƃ��������������B
+
+
+�y�X���C�h�V���[�ɂ��āz
+�@�X���C�h�V���[�̓g�b�v�y�[�W�̂ݕ\������悤�ɂȂ��Ă��܂��B
+�@theme_sequence.html �� sequencejs-theme.apple-style.css �ɂāA�\�����͂�摜�̐ݒ���s���Ă��܂��̂ŁA�J�X�^�}�C�Y����ꍇ�́A���ꂼ��̃t�@�C�����C�����Ă��������B
+
+�@�����A�X���C�h�V���[���g�������Ȃ��ꍇ�́Atheme_home.html �� 4�s�ڂɂ���
+�@	�@<{include file="`$xoops_theme`/theme_sequence.html"}>
+�Ƃ����L�q���R�����g�A�E�g���邩�폜���Ă��������B
 
 
 
 ==================================================================================
-利用について
+���p�ɂ���
 ==================================================================================
 
-　このテーマは、MIT ライセンスです。ご自由に改変するなどしてご利用ください。
-　なお、jQueryのプラグイン sequence については MIT/GPLデュアルライセンス。TwitterBootstrapのcssについては、Apache2ライセンスとなっておりますので、留意願います。
-　
-　雑誌・書籍への掲載の場合には、あらかじめ当サイト管理人へご一報ください。
-　　連絡先：http://xoops123.com/modules/liaise/
-
-
-==================================================================================
-利用拒否について
-==================================================================================
-
-　違法行為を行っているサイト、公序良俗に反するサイトでの利用は、お断り申し上げます。
+�@���̃e�[�}�́AMIT ���C�Z���X�ł��B�����R�ɉ��ς���Ȃǂ��Ă����p���������B
+�@�Ȃ��AjQuery�̃v���O�C�� sequence �ɂ��Ă� MIT/GPL�f���A�����C�Z���X�BTwitterBootstrap��css�ɂ��ẮAApache2���C�Z���X�ƂȂ��Ă���܂��̂ŁA���ӊ肢�܂��B
+�@
+�@�G���E���Ђւ̌f�ڂ̏ꍇ�ɂ́A���炩���ߓ��T�C�g�Ǘ��l�ւ���񂭂������B
+�@�@�A����Fhttp://xoops123.com/modules/liaise/
 
 
 ==================================================================================
-連絡先
+���p���ۂɂ���
 ==================================================================================
 
-　 http://xoops123.com/modules/liaise/
+�@��@�s�ׂ��s���Ă���T�C�g�A�����Ǒ��ɔ�����T�C�g�ł̗��p�́A���f��\���グ�܂��B
+
+
+==================================================================================
+�A����
+==================================================================================
+
+�@ http://xoops123.com/modules/liaise/
 
 
 ======================================================
-バージョンアップ履歴
+�o�[�W�����A�b�v����
 ======================================================
 
 2012-9-7 ver0.1
-　tw_940の構造を利用して作成。
+�@tw_940�̍\���𗘗p���č쐬�B
+2012-9-10 ver0.11
+�@�摜�X���C�_�[�p��jQuery�v���O�C�����̋L�q���C��
+�@�itheme_ext_js.html���ŗ��p����v���O�C����sequence.jquery.js�ɕύX�j
+
 
 ======================================================
-お願い
+���肢
 ======================================================
 
-　できましたら、当方のサイト掲示板（ご訪問帳）に何か書き込んでいただけると嬉しいです～m(_ _)m
-　　 http://xoops123.com/modules/d3forum/?forum_id=1 
+�@�ł��܂�����A�����̃T�C�g�f���i���K�⒠�j�ɉ�����������ł���������Ɗ������ł��`m(_ _)m
+�@�@ http://xoops123.com/modules/d3forum/?forum_id=1 
 
 
 

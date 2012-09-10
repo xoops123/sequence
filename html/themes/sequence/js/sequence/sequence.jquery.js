@@ -14,7 +14,7 @@ Aside from these comments, you may modify and distribute this file as you please
 (function($){
 	function Sequence(element, options, defaults, get){
 		var self = this;
-		self.container = $(element),
+		self.container = jQuery(element),
 		self.sequence = self.container.children("ul");
 		
 		try{ //is Modernizr.prefixed installed?
@@ -63,14 +63,14 @@ Aside from these comments, you may modify and distribute this file as you please
 						if(!self.transitionsSupported){
 							self.preloaderFallback();
 						}
-						return $(".sequence-preloader");
+						return jQuery(".sequence-preloader");
 					
 					case false:
 						break;
 					
 					default:
 						this.CSSSelectorToHTML(optionPreloader);
-						return $(optionPreloader);
+						return jQuery(optionPreloader);
 				}
 			},
 			
@@ -83,10 +83,10 @@ Aside from these comments, you may modify and distribute this file as you please
 					    if(defaultOption === ".sequence-preloader"){ //if setting up the preloader
 					        get.defaultPreloader(self.container, self.transitionsSupported, self.prefix);
 					    };
-						return $(defaultOption);
+						return jQuery(defaultOption);
 
 					default:
-						return $(devOption);
+						return jQuery(devOption);
 				}
 			}
 		},
@@ -118,7 +118,7 @@ Aside from these comments, you may modify and distribute this file as you please
 		    }
 		    if(self.settings.preloader){
 		    	if(self.settings.hidePreloaderUsingCSS && self.transitionsSupported){
-		    		self.prependPreloadingCompleteTo = (self.settings.prependPreloadingComplete == true) ? self.settings.preloader : $(self.settings.prependPreloadingComplete);
+		    		self.prependPreloadingCompleteTo = (self.settings.prependPreloadingComplete == true) ? self.settings.preloader : jQuery(self.settings.prependPreloadingComplete);
 		    		self.prependPreloadingCompleteTo.addClass("preloading-complete");
 		    		setTimeout(init, self.settings.hidePreloaderDelay);
 		    	}else{
@@ -145,7 +145,7 @@ Aside from these comments, you may modify and distribute this file as you please
 		            if(frame){ //if getting images from frames...
 		                selector = self.sequence.children("li:nth-child("+(self.settings.preloadTheseFrames[i])+")").find("img");
 		                selector.each(function(){ //grab each image in the frame
-		                    imagesToPreload[img] = $(this); //add the image selector to an array
+		                    imagesToPreload[img] = jQuery(this); //add the image selector to an array
 		                    img++; //increase the image count by one
 		                });
 		            }else{ //if getting individual images...
@@ -168,8 +168,8 @@ Aside from these comments, you may modify and distribute this file as you please
                 var loaded = 0; //save how many have loaded
                 var imagesToPreloadLength = imagesToPreload.length; //number of images to preload
                 for(var i = imagesToPreloadLength; i >=0; i--){ //for each image to be preloaded...
-                    var imgSrc = $(imagesToPreload[i]).attr("src"); //used to get .load() working in IE and Opera
-                    $(imagesToPreload[i]).load(function(){ //when each image loads...
+                    var imgSrc = jQuery(imagesToPreload[i]).attr("src"); //used to get .load() working in IE and Opera
+                    jQuery(imagesToPreload[i]).load(function(){ //when each image loads...
                         loaded++; //increase the number of loaded images by 1
                         if(imagesToPreloadLength === loaded){ //if all necessary images have preloaded...
                             oncePreloaded(); //initate Sequence
@@ -178,14 +178,14 @@ Aside from these comments, you may modify and distribute this file as you please
                 }
             }        
     	}else{
-		    $(window).bind("load", function(){
+		    jQuery(window).bind("load", function(){
 		    	oncePreloaded();
-		    	$(this).unbind("load");
+		    	jQuery(this).unbind("load");
 		    });
 		}		
 		
 		function init(){
-			$(self.settings.preloader).remove(); //remove the preloader element
+			jQuery(self.settings.preloader).remove(); //remove the preloader element
 						
 			self.settings.nextButton = self.init.uiElements(self.settings.nextButton, ".next");			
 			self.settings.prevButton = self.init.uiElements(self.settings.prevButton, ".prev");
@@ -216,7 +216,7 @@ Aside from these comments, you may modify and distribute this file as you please
 			//if using hashtags...
 			if(self.settings.hashTags){
 			    self.sequence.children("li").each(function(){ //for each frame...
-			        self.frameHashID.push($(this).attr(self.getHashTagFrom)); //add the hashtag to an array
+			        self.frameHashID.push(jQuery(this).attr(self.getHashTagFrom)); //add the hashtag to an array
 			    });
 			    			    
 			    self.currentHashTag = location.hash.replace("#", ""); //get the current hashtag
@@ -318,7 +318,7 @@ Aside from these comments, you may modify and distribute this file as you please
 					'right'	: 39
 				};
 				
-				$(document).keydown(function(e){
+				jQuery(document).keydown(function(e){
 					function keyEvents(keyPressed, keyDirections){
 						var keyCode;
 						for(keyCodes in keyDirections){
@@ -418,7 +418,7 @@ Aside from these comments, you may modify and distribute this file as you please
 			}
 			
 			if(self.settings.hashTags){ //if hashchange is enabled in the settings...
-    			$(window).hashchange(function(){ //when the hashtag changes...
+    			jQuery(window).hashchange(function(){ //when the hashtag changes...
     			    newTag = location.hash.replace("#", ""); //grab the new hashtag
     			    
     			    if(self.currentHashTag !== newTag){ //if the last hashtag is not the same as the current one...
@@ -485,7 +485,7 @@ Aside from these comments, you may modify and distribute this file as you please
 		        });
 			}
 			
-			$(window).resize(function(){ //if the window is resized...
+			jQuery(window).resize(function(){ //if the window is resized...
 				self.settings.calculatedSwipeThreshold = self.container.width() * (self.settings.swipeThreshold / 100); //recalculate the swipe threshold
 			});
 			//END EVENTS
@@ -497,9 +497,9 @@ Aside from these comments, you may modify and distribute this file as you please
 			var self = this, i = 0;
 			function preload(){
 				i = (i === 1) ? 0 : 1;
-				$(".sequence-preloader img:nth-child(1)").animate({"opacity": i}, 100);
-				$(".sequence-preloader img:nth-child(2)").animate({"opacity": i}, 350);
-				$(".sequence-preloader img:nth-child(3)").animate({"opacity": i}, 600);
+				jQuery(".sequence-preloader img:nth-child(1)").animate({"opacity": i}, 100);
+				jQuery(".sequence-preloader img:nth-child(2)").animate({"opacity": i}, 350);
+				jQuery(".sequence-preloader img:nth-child(3)").animate({"opacity": i}, 600);
 			}
 			preload();
 			self.defaultPreloader = setInterval(function(){
@@ -554,10 +554,10 @@ Aside from these comments, you may modify and distribute this file as you please
 			var self = this;
 			self.modifyElements(self.frameChildren, "");
 			self.frameChildren.each(function(){
-				self.transitionProperties["transition-duration"] = $(this).css(self.prefix + "transition-duration");
-				self.transitionProperties["transition-delay"] = $(this).css(self.prefix + "transition-delay");
+				self.transitionProperties["transition-duration"] = jQuery(this).css(self.prefix + "transition-duration");
+				self.transitionProperties["transition-delay"] = jQuery(this).css(self.prefix + "transition-delay");
 
-				$(this).css(
+				jQuery(this).css(
 					self.prefixCSS(self.prefix, self.transitionProperties)
 				);
 			});
@@ -934,16 +934,16 @@ Aside from these comments, you may modify and distribute this file as you please
 			}
 		
 			elements.each(function(){
-				$(this).data('animationEnded', false); // set the data attribute to indicate that the elements animation has not yet ended
+				jQuery(this).data('animationEnded', false); // set the data attribute to indicate that the elements animation has not yet ended
 			});
 	
 			self.currentFrame.bind(self.transitionEnd, function(e){
-				$(e.target).data('animationEnded', true); // this element has finished it's animation
+				jQuery(e.target).data('animationEnded', true); // this element has finished it's animation
 			
 				// now we'll check if all elements are finished animating
 				var allAnimationsEnded = true;
 					elements.each(function(){
-						if($(this).data('animationEnded') === false){
+						if(jQuery(this).data('animationEnded') === false){
 							allAnimationsEnded = false;
 						}
 					});
@@ -957,8 +957,8 @@ Aside from these comments, you may modify and distribute this file as you please
 
 	$.fn.sequence = function(options){
 		return this.each(function(){
-			var sequence = new Sequence($(this), options, defaults, get);
-			$(this).data("sequence", sequence); 
+			var sequence = new Sequence(jQuery(this), options, defaults, get);
+			jQuery(this).data("sequence", sequence); 
 		});
 	};
 	
@@ -975,24 +975,24 @@ Aside from these comments, you may modify and distribute this file as you please
 		defaultPreloader: function(prependTo, transitions, prefix){
 			var icon = '<div class="sequence-preloader"><svg class="preloading" xmlns="http://www.w3.org/2000/svg"><circle class="circle" cx="6" cy="6" r="6" /><circle class="circle" cx="22" cy="6" r="6" /><circle class="circle" cx="38" cy="6" r="6" /></svg></div>';
 			
-			$("head").append("<style>.sequence-preloader{height: 100%;position: absolute;width: 100%;z-index: 999999;}@"+prefix+"keyframes preload{0%{opacity: 1;}50%{opacity: 0;}100%{opacity: 1;}}.sequence-preloader .preloading .circle{fill: #ff9442;display: inline-block;height: 12px;position: relative;top: -50%;width: 12px;"+prefix+"animation: preload 1s infinite; animation: preload 1s infinite;}.preloading{display:block;height: 12px;margin: 0 auto;top: 50%;margin-top:-6px;position: relative;width: 48px;}.sequence-preloader .preloading .circle:nth-child(2){"+prefix+"animation-delay: .15s; animation-delay: .15s;}.sequence-preloader .preloading .circle:nth-child(3){"+prefix+"animation-delay: .3s; animation-delay: .3s;}.preloading-complete{opacity: 0;visibility: hidden;"+prefix+"transition-duration: 1s; transition-duration: 1s;}div.inline{background-color: #ff9442; margin-right: 4px; float: left;}</style>");
+			jQuery("head").append("<style>.sequence-preloader{height: 100%;position: absolute;width: 100%;z-index: 999999;}@"+prefix+"keyframes preload{0%{opacity: 1;}50%{opacity: 0;}100%{opacity: 1;}}.sequence-preloader .preloading .circle{fill: #ff9442;display: inline-block;height: 12px;position: relative;top: -50%;width: 12px;"+prefix+"animation: preload 1s infinite; animation: preload 1s infinite;}.preloading{display:block;height: 12px;margin: 0 auto;top: 50%;margin-top:-6px;position: relative;width: 48px;}.sequence-preloader .preloading .circle:nth-child(2){"+prefix+"animation-delay: .15s; animation-delay: .15s;}.sequence-preloader .preloading .circle:nth-child(3){"+prefix+"animation-delay: .3s; animation-delay: .3s;}.preloading-complete{opacity: 0;visibility: hidden;"+prefix+"transition-duration: 1s; transition-duration: 1s;}div.inline{background-color: #ff9442; margin-right: 4px; float: left;}</style>");
 			prependTo.prepend(icon);
 			if(!Modernizr.svg && !transitions){ //if SVG isn't supported, remain calm and add this fallback instead...
-			    $(".sequence-preloader").prepend('<div class="preloading"><div class="circle inline"></div><div class="circle inline"></div><div class="circle inline"></div></div>');
+			    jQuery(".sequence-preloader").prepend('<div class="preloading"><div class="circle inline"></div><div class="circle inline"></div><div class="circle inline"></div></div>');
 			    setInterval(function(){
-			        $(".sequence-preloader .circle").fadeToggle(500);
+			        jQuery(".sequence-preloader .circle").fadeToggle(500);
 			    }, 500);
 			}else if(!transitions){ //if transitions aren't supported, toggle the opacity instead  
 			    setInterval(function(){
-			        $(".sequence-preloader").fadeToggle(500);
+			        jQuery(".sequence-preloader").fadeToggle(500);
 			    }, 500);
 			}
 		},
 		
 		//a quick test to work out if Opera supports transitions properly (to work around the fact that Opera 11 supports transitions but doesn't return a transition value properly)
 		operaTest: function(){
-		    $("body").append('<span id="sequence-opera-test"></span>');
-		    var $operaTest = $("#sequence-opera-test");
+		    jQuery("body").append('<span id="sequence-opera-test"></span>');
+		    var $operaTest = jQuery("#sequence-opera-test");
 		    $operaTest.css("-o-transition", "1s");
 		    //if the expected value isn't returned...
 		    if($operaTest.css("-o-transition") != "1s"){
