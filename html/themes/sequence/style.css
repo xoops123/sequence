@@ -338,3 +338,11 @@ body.bulletin .item {
 	clear:both;
 }
 
+input,
+textarea {
+  width: 94%;
+}
+
+#area_dhtmltarea input#textAddtext {
+	width:300px;
+}
