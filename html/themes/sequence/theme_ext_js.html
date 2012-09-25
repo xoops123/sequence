@@ -31,7 +31,6 @@ jQuery(document).ready(function() {
 	var url = location.href.split('index\.php')[0] ; 
 	jQuery("ul#mainmenu,ul#usermenu").addClass("nav","nav-list");
 	jQuery("input").addClass("btn");
-	jQuery('#mainmenu a[href="'+url+'"],#usermenu a[href="'+url+'"]').addClass('active');
 	jQuery('h2.head').each(function(){
 		var txt = jQuery(this).html();
 		jQuery(this).html(txt.replace(/.*コメント.*/gi,'&ldquo;'));
@@ -39,11 +38,9 @@ jQuery(document).ready(function() {
 	});
 });
 </script>
-<script type="text/javascript" src="<{$xoops_imageurl}>js/sequence/sequence.jquery-min.js"></script>
 <{if $xoops_dirname == ""}>
 <link rel="stylesheet" type="text/css" href="<{$xoops_imageurl}>css/sequencejs-theme.apple-style.css" />
-<{/if}>
-<script type="text/javascript" src="<{$xoops_imageurl}>js/sequence/sequence.jquery.js"></script>
+<script type="text/javascript" src="<{$xoops_imageurl}>js/sequence/sequence.jquery-min.js"></script>
 <script type="text/javascript">	
 	jQuery(document).ready(function(){
 		$status = jQuery(".status");
@@ -53,8 +50,8 @@ jQuery(document).ready(function() {
 			nextButton: true,
 			prevButton: true,
 			pauseButton: true,
-			hidePreloaderusingCSS: false,						
-			animateStartingFrameIn: true, 			
+			hidePreloaderusingCSS: false,
+			animateStartingFrameIn: true,
 			transitionThreshold: 500,
 			pauseOnHover: false,
 			customKeyEvents: {
@@ -85,3 +82,4 @@ jQuery(document).ready(function() {
 		var sequence = jQuery("#sequence").sequence(options).data("sequence");
 	})	
 </script>
+<{/if}>

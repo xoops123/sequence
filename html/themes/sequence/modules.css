@@ -594,3 +594,11 @@ dl.pico_subcategory dd {
 	margin-left:30px;
 }
 
+
+/* xpwiki */
+
+h2#content_1_5 + p a.ext {
+border: none;
+background: none;
+}
+
